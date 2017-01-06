@@ -1,0 +1,41 @@
+@mixin baseSet($width:auto,$height:auto,$backgroundColor:auto){
+	width: $width;
+	height: $height;
+	background-color: $backgroundColor;
+};
+
+@mixin fontSet($fontSize,$color:auto,$fontWeight: auto){
+	font: {
+		size: $fontSize;
+		color: $color;
+		weight: $fontWeight;
+		family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+	};
+};
+
+@mixin middle($lineHeight:auto){
+	line-height: $lineHeight;
+	text-align: center;
+	vertical-align: middle;
+}
+
+@mixin positionSet($position,$top:auto,$left:auto,$bottom: auto,$right:auto){
+	position: $position;
+	top: $top;
+	left: $left;
+	bottom: $bottom;
+	right: $right;
+}
+
+@mixin backgroundSet($imageName,$size,$positionX:auto,$positionY:auto) {
+	background: {
+		image: url(..images/#{$imageName});
+		repeat: no-repeat;
+		size: $size;
+		position: {
+			x: $positionX;
+			y: $positionY;
+		};
+	}
+};
+
