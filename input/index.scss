@@ -121,7 +121,7 @@ button {
 
 .notification-outside {
 	@include baseSet($full);
-	@include middle();
+	@include middle;
 	@include positionSet(fixed,230px,0);
 	display: none;
 	z-index: 200;

@@ -29,7 +29,7 @@
 
 @mixin backgroundSet($imageName,$size,$positionX:auto,$positionY:auto) {
 	background: {
-		image: url(..images/#{$imageName});
+		image: url(../images/#{$imageName});
 		repeat: no-repeat;
 		size: $size;
 		position: {

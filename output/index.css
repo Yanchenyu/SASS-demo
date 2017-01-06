@@ -18,7 +18,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(..images/login_background.jpg);
+  background-image: url(../images/login_background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: auto;
@@ -148,7 +148,7 @@ button {
   border-radius: 7px; }
 
 .cleanInput {
-  background-image: url(..images/delete.png);
+  background-image: url(../images/delete.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position-x: center;
