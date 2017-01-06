@@ -1,0 +1,23 @@
+{
+  "name": "sass-demo",
+  "version": "1.0.0",
+  "description": "practice sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yanchenyu/SASS-demo.git"
+  },
+  "keywords": [
+    "sass",
+    "demo"
+  ],
+  "author": "yanchenyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanchenyu/SASS-demo/issues"
+  },
+  "homepage": "https://github.com/Yanchenyu/SASS-demo"
+}

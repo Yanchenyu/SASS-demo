@@ -1,0 +1,176 @@
+@import "basisStyle";
+
+.basColor {
+	color: #fff;
+}
+
+.basBgcolor {
+	color: #00b9ff;
+}
+
+//@extend用法只能在同一个文件下，用@import可以调用$aa声明的变量；
+
+* {
+	margin: 0;
+	padding: 0;
+	font: {
+		size: $size;
+		family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+	};
+}
+
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: {
+		image: url(../images/login_background.jpg);
+		repeat: no-repeat;
+		size: $full;
+	}
+}
+
+nav {
+	width: $full;
+	height: $full/5;
+}
+
+header {
+	@extend .basColor;
+	width: $full;
+	height: auto;
+	margin: 0 auto;
+	font-size: $basis;
+	text-align: center;
+}
+
+article {
+	width: $full;
+	height:auto;
+    margin: $basis auto 0 auto;
+    img {
+    	width: 25px;
+		height: 25px;
+		float: left;
+		padding: {
+			top: 6px;
+			left: 15px;
+		}
+    }
+}
+
+
+
+.main {
+    position: relative;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    height: $basis+20px;
+}
+
+button {
+	width: 252px;
+	height: $basis+2px;
+	margin-top: 25px;
+	background: #00b9ff;
+	border: 0px solid rgb(230, 227, 227){
+		radius: 30px;
+	};
+    outline:none;
+}
+
+.rememberpsw {
+	width: 20px;
+	height: $basis/2;
+	margin: 3px auto auto auto;
+}
+
+.user-container	{
+	position: relative;
+	width:252px;
+	height:$basis;
+	line-height: $basis;
+	margin:0 auto;
+	margin-top:20px;
+	border: 1px solid rgb(230,227,227){
+		radius: 30px;
+	}
+}
+
+
+
+.username,.password  {
+	@extend .basColor;
+	background-color:transparent;
+	border:none;
+	height:$basis;
+	line-height:$basis;
+	outline:none;
+	float: left;
+	padding-left: 6px;
+}
+
+.submit_button {
+	@extend .basColor;
+}
+
+.mengceng {
+    position: fixed;
+	top: 0;
+	left: 0;
+    width: $full;
+    height: $full;
+    z-index: 150;
+    background: black;
+    opacity: 0.5;
+    display: none;
+}
+
+
+.notification-test {
+	width: $full;
+	height: $basis*2;
+	text-align: center;
+	font-size: 16px;
+	line-height: 80px;
+	border-bottom: {
+		right-radius: 7px;
+		left-radius: 7px;
+	};
+	@extend .basColor;
+}
+
+.notification-outside {
+	text-align: center;
+	width: $full;
+	position: fixed;
+	top: 230px;
+	left: 0;
+	display: none;
+	z-index: 200;
+}
+
+.notification-inside {
+	width: 230px;
+	margin: 0 auto;
+	background-color: #000;
+	opacity: 0.7;
+	border-radius: 7px;
+}
+
+.cleanInput {
+	background: {
+		image: url("../images/delete.png");
+		repeat: no-repeat;
+		size: 60%;
+		position: center;
+	};
+    width: $basis;
+    height: $basis;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
