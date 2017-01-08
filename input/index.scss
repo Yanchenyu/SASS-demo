@@ -135,8 +135,29 @@ button {
 }
 
 .cleanInput {
-	@include backgroundSet("delete.png",60%,center,center);
+	@include backgroundSet("delete.png",60%,20px 20px);
     @include baseSet($basis,$basis);
     @include positionSet(absolute,0,auto,auto,0);
     display: none;
+}
+
+
+
+
+.takeup_left {
+	color: #000;
+	li{
+		@extend .takeUp;
+		span {
+			width: 30%;
+			display: inline-block;
+		}
+	}
+}
+
+.takeUp {
+	float: right;
+	span {
+		width: 40%;
+	}
 }

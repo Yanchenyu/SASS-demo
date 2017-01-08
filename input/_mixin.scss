@@ -27,15 +27,12 @@
 	right: $right;
 }
 
-@mixin backgroundSet($imageName,$size,$positionX:auto,$positionY:auto) {
+@mixin backgroundSet($imageName,$size,$position:auto) {
 	background: {
 		image: url(../images/#{$imageName});
 		repeat: no-repeat;
 		size: $size;
-		position: {
-			x: $positionX;
-			y: $positionY;
-		};
+		position: $position;
 	}
 };
 
