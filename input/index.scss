@@ -76,7 +76,8 @@ button {
 	@include baseSet(252px,$basis);
 	position: relative;
 	line-height: $basis;
-	margin:0 auto{
+	margin:0 auto;
+	margin: {
 		top: 20px
 	};
 	border: 1px solid rgb(230,227,227){

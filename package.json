@@ -19,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/Yanchenyu/SASS-demo/issues"
   },
-  "homepage": "https://github.com/Yanchenyu/SASS-demo"
+  "homepage": "https://github.com/Yanchenyu/SASS-demo",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-usemin": "^0.3.27"
+  }
 }
